@@ -4,6 +4,13 @@ node {
         checkout scm
     }
 
+    stage('Test'){
+        sh '''
+            npm i 
+            npx jest
+        '''
+    }
+
     stage('Deploy') {
         sh '''
         sudo  rm -rf /var/www/html/*
