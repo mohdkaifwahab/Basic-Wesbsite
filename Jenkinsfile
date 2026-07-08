@@ -13,6 +13,6 @@ node {
     }
 
     stage('Success') {
-        echo 'Build successful.'
+        echo 'Build successful'
     }
 }
